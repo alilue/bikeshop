@@ -51,6 +51,7 @@ a {
 .default-link:active {
     color: var(--base-color-active);
 }
+
 /*Кнопка*/
 .default-btn {
     display: inline-block;
@@ -75,6 +76,23 @@ a {
 
 .default-btn:active {
     background-color: var(--base-color-active);
+}
+
+/*Текстовое поле*/
+.text-field {
+    padding: 11px 47px 11px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: border-color var(--transition-duration);
+    outline: none;
+}
+
+.text-field::placeholder {
+    color: var(--place-holder-color);
+}
+
+.text-field:focus {
+    border-color: var(--base-color);
 }
 
 .container {
