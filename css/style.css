@@ -35,7 +35,6 @@ a {
 /*Ссылка*/
 .default-link {
     color: var(--black-color);
-    font-size: 20px;
     text-decoration: underline;
     transition: color var(--transition-duration), background-color var(--transition-duration);
 }
@@ -51,6 +50,31 @@ a {
 
 .default-link:active {
     color: var(--base-color-active);
+}
+/*Кнопка*/
+.default-btn {
+    display: inline-block;
+    padding: 11px 47px;
+    color: var(--black-color);
+    border-radius: 12px;
+    background-color: var(--base-color);
+    border: none;
+    outline: 1px solid transparent;
+    outline-offset: 2px;
+    transition: outline-color var(--transition-duration), background-color var(--transition-duration);
+    cursor: pointer;
+}
+
+.default-btn:focus-visible {
+    outline-color: var(--base-color);;
+}
+
+.default-btn:hover {
+    background-color: var(--base-color-hover);
+}
+
+.default-btn:active {
+    background-color: var(--base-color-active);
 }
 
 .container {
