@@ -230,7 +230,7 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0px 15px;
+    padding: 0 15px;
 }
 
 /*Шапка*/
@@ -262,6 +262,44 @@ a {
 
 .header__logo:active {
     background-color: var(--base-color-active);
+}
+
+/*Hero*/
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    gap: 30px;
+}
+
+.hero__container::after {
+    content: "";
+    display: block;
+    flex-basis: 470px;
+    height: 375px;
+    background-image: url(../img/hero.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero__content {
+    flex-basis: 484px;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+
+.hero__desc {
+    max-width: 360px;
+    margin-top: 0;
+    margin-bottom: 48px;
+    font-size: 20px;
 }
 
 @media (max-width: 740px) {
@@ -325,5 +363,19 @@ a {
         padding-left: 15px;
         padding-right: 15px;
         width: fit-content;
+    }
+
+    /*Hero*/
+    .hero__container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .hero__container::after {
+        display: none;
+    }
+
+    .hero__title {
+        font-size: 28px;
     }
 }
