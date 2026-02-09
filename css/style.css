@@ -103,6 +103,10 @@ a {
     font-weight: 700;
 }
 
+/*Лого*/
+.logo {
+    width: 154px;
+}
 .container {
     max-width: 780px;
     margin: 0 auto;
