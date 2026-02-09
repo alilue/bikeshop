@@ -95,6 +95,14 @@ a {
     border-color: var(--base-color);
 }
 
+/*Подзаголовок*/
+.subtitle {
+    margin: 0;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+
 .container {
     max-width: 780px;
     margin: 0 auto;
