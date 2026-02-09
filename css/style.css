@@ -81,7 +81,7 @@ a {
 
 /*Текстовое поле*/
 .text-field {
-    padding: 11px 47px 11px 16px;
+    padding: 11px 16px 11px 16px;
     border-radius: 12px;
     border: 1px solid var(--border-color);
     transition: border-color var(--transition-duration);
@@ -106,6 +106,7 @@ a {
 
 /*Лого*/
 .logo {
+    display: block;
     width: 154px;
 }
 
@@ -139,6 +140,16 @@ a {
     color: var(--base-color-active);
 }
 
+/*Форма обратной связи*/
+.callback-form {
+    display: flex;
+    gap: 16px;
+}
+
+.callback-form__inp {
+    flex-basis: 288px;
+}
+
 .container {
     max-width: 780px;
     margin: 0 auto;
@@ -146,5 +157,13 @@ a {
 }
 
 @media (max-width: 740px) {
+    /*Форма обратной связи*/
+    .callback-form {
+        flex-direction: column;
+    }
+
+    .callback-form__inp {
+        flex-basis: initial;
+    }
 
 }
