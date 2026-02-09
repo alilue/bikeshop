@@ -23,6 +23,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     color: var(--black-color);
+    background-color: #263238;
 }
 
 img {
@@ -107,6 +108,37 @@ a {
 .logo {
     width: 154px;
 }
+
+/*Меню*/
+.menu__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    gap: 50px;
+    padding-left: 0;
+}
+
+.menu__link {
+    color: white;
+    outline: none;
+    transition: outline-color var(--transition-duration), background-color var(--transition-duration);
+}
+
+.menu__link:focus-visible {
+    outline: none;
+    color: var(--black-color);
+    background-color: var(--base-color);
+}
+
+.menu__link:hover {
+    color: var(--base-color-hover);
+}
+
+.menu__link:active {
+    color: var(--base-color-active);
+}
+
 .container {
     max-width: 780px;
     margin: 0 auto;
